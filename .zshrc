@@ -11,12 +11,19 @@ plugins=(git)
 #Compiling OnMyZsh
 source $ZSH/oh-my-zsh.sh
 
+# Define dotFiles Folders
+DOTFILES=$HOME/.dotfiles
+
+# Folders in dotFiles
+ALIASES=$DOTFILES/aliases
+FUNCTIONS=$DOTFILES/functions
+
 # Includes
-. $HOME/.dotfiles/.goaliases
-. $HOME/.dotfiles/.functions
-. $HOME/.dotfiles/.path
-. $HOME/.dotfiles/.aliases
-. $HOME/.dotfiles/.keyboard
+. $DOTFILES/.goaliases
+. $DOTFILES/.functions
+. $DOTFILES/.path
+. $DOTFILES/.aliases
+. $DOTFILES/.keyboard
 
 #Include fuck
 eval "$(thefuck --alias)"
