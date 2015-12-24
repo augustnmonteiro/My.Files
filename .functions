@@ -1,20 +1,13 @@
 #!/bin/bash
 
+#Includes
+. $FUNCTIONS/.javause
+
 #Function to add aliases to go for an page
 function addGoAliases(){
     echo "alias go$1=\"cd `pwd`\"" >> $HOME/.goaliases  
     source $HOME/.zshrc
 }
-
-
-#Function to change java versions
-JAVAS[7]="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home"
-JAVAS[8]="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
-export JAVA_HOME=$JAVAS[8]
-function javause(){
-    export JAVA_HOME=$JAVAS[$1]
-}
-
 
 #Function to checkout for a feature branch
 function gcfb(){
