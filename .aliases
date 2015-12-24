@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+alias chromeUnsecurity='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome_dev_sesion1 --disable-web-security'
+
+
+alias chrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --user-data-dir=/tmp/chrome_dev_sesion1'
+
+
+alias my_sql='/usr/local/Cellar/mysql/5.6.26/support-files/mysql.server'
+
+
+alias chromePerf='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --enable-memory-info --js-flags="--trace-deopt --trace-opt-verbose --prof --noprof-lazy --log-timer-events" --no-sandbox'
+
+
+# Git handlers
+alias gpushhead="git push origin HEAD"
+alias gpullhead="git pull --rebase origin HEAD"
+alias gpbeta="g pull origin beta"
+
+# RLWrap
+alias telnet="rlwrap telnet"
