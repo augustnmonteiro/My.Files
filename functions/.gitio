@@ -1,0 +1,8 @@
+#!bin/bash
+
+gitio() {
+  createdUrl=$(curl -X POST -H "Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW" -F "url=https://www.github.com/$1" 'http://git.io/create')
+  finalUrl="http://git.io/$createdUrl"
+  echo $finalUrl
+  echo $finalUrl | pbcopy 
+}

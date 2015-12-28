@@ -5,6 +5,7 @@
 . $FUNCTIONS/.git_helpers
 . $FUNCTIONS/.addGoAliases
 . $FUNCTIONS/.github_create_repository
+. $FUNCTIONS/.gitio
 
 #Function to resource
 function resource(){

@@ -15,6 +15,6 @@ github_create_repository() {
     fi
 
     echo $giturl
-    pbcopy $giturl
+    echo $giturl | pbcopy
   fi
 }
