@@ -2,14 +2,13 @@
 
 #Includes
 . $FUNCTIONS/.javause
+. $FUNCTIONS/.git_helpers
+. $FUNCTIONS/.addGoAliases
+. $FUNCTIONS/.github_create_repository
 
-#Function to add aliases to go for an page
-function addGoAliases(){
-    echo "alias go$1=\"cd `pwd`\"" >> $HOME/.goaliases  
-    source $HOME/.zshrc
-}
-
-#Function to checkout for a feature branch
-function gcfb(){
-  g checkout feature/$1
+#Function to resource
+function resource(){
+    echo "Source $HOME/.dotfiles/.zshrc"
+    source $HOME/.dotfiles/.zshrc
+    echo "Ok"
 }

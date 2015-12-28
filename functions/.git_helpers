@@ -1,0 +1,11 @@
+#!bin/bash
+
+#Function to checkout for a feature branch
+function gitcfb(){
+  g checkout feature/$1
+}
+
+#Function to checkout for a hotfix 
+function gitchf(){
+  g checkout hotfix/$1
+}

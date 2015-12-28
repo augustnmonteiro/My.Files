@@ -1,0 +1,7 @@
+#!bin/bash
+
+#Function to add aliases to go for an page
+function addGoAliases(){
+    echo "alias go$1=\"cd `pwd`\"" >> $HOME/.goaliases  
+    source $HOME/.zshrc
+}
