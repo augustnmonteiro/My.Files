@@ -1,0 +1,19 @@
+#!bin/bash
+
+function update_dot_files(){
+  echo "Entering on dotfiles folder"
+  cd $DOTFILES  
+  git status
+  echo "Updating local files from repository"
+  git pull origin master
+  echo "Adding all modifications"
+  git add .
+  echo "Commit"
+  if [[ $1 == "" ]]; then
+    git commit -m "Updating Files"
+  else 
+    git commit -m $1 
+  fi
+  echo "Pushing files"
+  git push origin master
+}

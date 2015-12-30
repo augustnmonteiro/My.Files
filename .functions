@@ -6,10 +6,16 @@
 . $FUNCTIONS/.addGoAliases
 . $FUNCTIONS/.github_create_repository
 . $FUNCTIONS/.gitio
+. $FUNCTIONS/.update_dot_files
 
 #Function to resource
 function resource(){
     echo "Source $HOME/.dotfiles/.zshrc"
     source $HOME/.dotfiles/.zshrc
-    echo "Ok"
+
+    if [[ $? == 0 ]]; then
+      echo "Source Ok!"
+    else
+      echo "Some error on source!"
+    fi
 }
