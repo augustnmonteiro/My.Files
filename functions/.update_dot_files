@@ -10,9 +10,9 @@ function update_dot_files(){
   git add . > /dev/null
   echo "Commit"
   if [[ $1 == "" ]]; then
-    git commit -m "Updating Files"
+    git commit -m "Updating Files" > /dev/null
   else 
-    git commit -m $1 
+    git commit -m $1 > /dev/null
   fi
   echo "Pushing files"
   git push origin master > /dev/null
