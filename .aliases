@@ -3,6 +3,10 @@
 #Includes
 . $ALIASES/.chrome
 
+#vim
+alias vim='$VIM_BINARY -u $DOTFILES/.vimrc'
+alias vi='$VIM_BINARY -u $DOTFILES/.vimrc'
+
 alias my_sql='/usr/local/Cellar/mysql/5.6.26/support-files/mysql.server'
 
 # Git handlers

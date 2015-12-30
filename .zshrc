@@ -18,9 +18,11 @@ DOTFILES=$HOME/.dotfiles
 TOOLS=$DOTFILES/tools
 ALIASES=$DOTFILES/aliases
 FUNCTIONS=$DOTFILES/functions
+CONSTANTS=$DOTFILES/constants
 
 # Includes
 . $DOTFILES/.tools
+. $DOTFILES/.constants
 . $DOTFILES/.goaliases
 . $DOTFILES/.functions
 . $DOTFILES/.path
