@@ -1,0 +1,4 @@
+#!bin/bash
+
+#Includes
+. $TOOLS/.terminal_colors

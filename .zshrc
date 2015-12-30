@@ -15,10 +15,12 @@ source $ZSH/oh-my-zsh.sh
 DOTFILES=$HOME/.dotfiles
 
 # Folders in dotFiles
+TOOLS=$DOTFILES/tools
 ALIASES=$DOTFILES/aliases
 FUNCTIONS=$DOTFILES/functions
 
 # Includes
+. $DOTFILES/.tools
 . $DOTFILES/.goaliases
 . $DOTFILES/.functions
 . $DOTFILES/.path
