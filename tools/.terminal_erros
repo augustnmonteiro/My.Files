@@ -1,0 +1,12 @@
+#!bin/bash
+
+#Control results of comands
+
+# /2
+function command_status(){
+  if [[ $? == 0 ]]; then
+    success $1
+  else 
+    error $2
+  fi
+}

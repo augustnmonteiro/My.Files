@@ -2,3 +2,4 @@
 
 #Includes
 . $TOOLS/.terminal_colors
+. $TOOLS/.terminal_erros

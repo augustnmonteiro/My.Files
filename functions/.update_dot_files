@@ -1,19 +1,18 @@
 #!bin/bash
 
 function update_dot_files(){
-  echo "Entering on dotfiles folder"
+  echo "Updating dotfiles"
   cd $DOTFILES  
-  git status > /dev/null
-  echo "Updating local files from repository"
-  git pull origin master > /dev/null
-  echo "Adding all modifications"
-  git add . > /dev/null
-  echo "Commit"
+  git pull origin master
+  command_status "Updated from remote" "Error on update from remote"
+  git add .
+  command_status "Adding all modifications" "Error on add files"
   if [[ $1 == "" ]]; then
-    git commit -m "Updating Files" > /dev/null
+    git commit -m "Updating Files"
   else 
-    git commit -m $1 > /dev/null
+    git commit -m $1
   fi
-  echo "Pushing files"
-  git push origin master > /dev/null
+  command_status "Commited!" "Error on commit"
+  git push origin master
+  command_status "Pushed!" "Error on Push"
 }

@@ -10,12 +10,7 @@
 
 #Function to resource
 function resource(){
-    echo "Source $HOME/.dotfiles/.zshrc"
-    source $HOME/.dotfiles/.zshrc
-
-    if [[ $? == 0 ]]; then
-      success "Source Ok!"
-    else
-      error "Some error on source!"
-    fi
+  echo "Source $HOME/.dotfiles/.zshrc"
+  source $HOME/.dotfiles/.zshrc
+  command_status "Source Ok!" "Some problem with your source!"
 }
