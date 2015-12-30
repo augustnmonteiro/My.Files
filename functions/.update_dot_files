@@ -3,11 +3,11 @@
 function update_dot_files(){
   echo "Entering on dotfiles folder"
   cd $DOTFILES  
-  git status
+  git status > /dev/null
   echo "Updating local files from repository"
-  git pull origin master
+  git pull origin master > /dev/null
   echo "Adding all modifications"
-  git add .
+  git add . > /dev/null
   echo "Commit"
   if [[ $1 == "" ]]; then
     git commit -m "Updating Files"
@@ -15,5 +15,5 @@ function update_dot_files(){
     git commit -m $1 
   fi
   echo "Pushing files"
-  git push origin master
+  git push origin master > /dev/null
 }
