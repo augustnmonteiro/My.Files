@@ -14,8 +14,8 @@ function resource(){
     source $HOME/.dotfiles/.zshrc
 
     if [[ $? == 0 ]]; then
-      echo "Source Ok!"
+      success "Source Ok!"
     else
-      echo "Some error on source!"
+      error "Some error on source!"
     fi
 }
