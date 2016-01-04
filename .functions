@@ -7,6 +7,7 @@
 . $FUNCTIONS/.github_create_repository
 . $FUNCTIONS/.gitio
 . $FUNCTIONS/.update_dot_files
+. $FUNCTIONS/.change_ext
 
 #Function to resource
 function resource(){
