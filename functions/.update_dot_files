@@ -1,6 +1,7 @@
 #!bin/bash
 
 function update_dot_files(){
+  originPWD = `pwd`
   echo "Updating dotfiles"
   cd $DOTFILES  
   git pull origin master
@@ -15,4 +16,5 @@ function update_dot_files(){
   command_status "Commited!" "Error on commit"
   git push origin master
   command_status "Pushed!" "Error on Push"
+  cd $originPWD
 }
