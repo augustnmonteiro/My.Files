@@ -6,6 +6,7 @@
 . $FUNCTIONS/.addGoAliases
 . $FUNCTIONS/.github_create_repository
 . $FUNCTIONS/.gitio
+. $FUNCTIONS/.git_commit_feature
 . $FUNCTIONS/.update_dot_files
 . $FUNCTIONS/.change_ext
 

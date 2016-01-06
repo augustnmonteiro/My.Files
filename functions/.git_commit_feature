@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function gitCommitFeature(){
+  fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
+  name=$(sed "s/feature\///g" <<< "$fb")
+  git commit -m "$name: $1"
+}
