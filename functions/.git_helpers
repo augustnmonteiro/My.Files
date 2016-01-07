@@ -9,3 +9,21 @@ function gitcfb(){
 function gitchf(){
   g checkout hotfix/$1
 }
+
+#Function to push for current branch
+function gitPushCurrent () {
+    branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+    hub push origin $branch
+    information "Pushed to branch '$branch'"
+}
+
+#Function to commmit with task id
+function gitCommitFeature(){
+  fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
+  name=$(sed "s/feature\///g" <<< "$fb")
+  name=$(sed "s/hotfix\///g" <<< "$name")
+
+  printf "${BOLD}Feature: $name ${NC} | Message?\n";
+
+  git commit -m "$name: $1"
+}

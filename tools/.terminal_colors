@@ -9,26 +9,35 @@ GREEN='\033[00;32m'
 YELLOW='\033[00;33m'
 BLUE='\033[00;34m'
 WHITE='\033[01;37m'
-END=$'\e[0m'
+BOLD='\033[00;0m'
+NC=$'\e[0m'
 
 # Functions
 
 log() {
-  printf "\n${WHITE}%s${END}\n" "$*"
+  printf "\n${WHITE}%s${NC}\n" "$*"
 }
 
 error() {
-  printf "\n${RED}%s${END}\n" "$*"
+  printf "\n${RED}%s${NC}\n" "$*"
 }
 
 warning() {
-  printf "\n${YELLOW}%s${END}\n" "$*"
+  printf "\n${YELLOW}%s${NC}\n" "$*"
 }
 
 information() {
-  printf "\n${BLUE}%s${END}\n" "$*"
+  printf "\n${BLUE}%s${NC}\n" "$*"
 }
 
 success() {
-  printf "\n${GREEN}%s${END}\n" "$*"
+  printf "\n${GREEN}%s${NC}\n" "$*"
+}
+
+success() {
+  printf "\n${GREEN}%s${NC}\n" "$*"
+}
+
+bold() {
+  printf "\n${BOLD}%s${NC}\n" "$*"
 }
