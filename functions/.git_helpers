@@ -18,7 +18,7 @@ function gitPushCurrent () {
 }
 
 #Function to commmit with task id
-function gitCommitFeature(){
+function gitCommit(){
   fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
   name=$(sed "s/feature\///g" <<< "$fb")
   name=$(sed "s/hotfix\///g" <<< "$name")
