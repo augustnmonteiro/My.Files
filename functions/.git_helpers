@@ -13,7 +13,7 @@ function gitchf(){
 #Function to push for current branch
 function gitPushCurrent () {
     branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
-    hub push origin $branch
+    git push origin $branch
     information "Pushed to branch '$branch'"
 }
 
