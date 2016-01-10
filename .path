@@ -3,24 +3,24 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 
 # Jruby
-export JRUBY="/Users/augustomna2010/.rvm/gems/jruby-1.7.11/bin"
-export JRUBY_RUBIES="/Users/augustomna2010/.rvm/rubies/jruby-1.7.11/bin" 
-export JRUBY_GLOBAL="/Users/augustomna2010/.rvm/gems/jruby-1.7.11@global/bin"
+export JRUBY="$HOME/.rvm/gems/jruby-1.7.11/bin"
+export JRUBY_RUBIES="$HOME/.rvm/rubies/jruby-1.7.11/bin" 
+export JRUBY_GLOBAL="$HOME/.rvm/gems/jruby-1.7.11@global/bin"
 
 # RVM 
-export RVM="/Users/augustomna2010/.rvm/bin"
+export RVM="$HOME/.rvm/bin"
 
 # Android Path
-export ANDROID_SDK="/Users/augustomna2010/Documents/android-sdk-macosx"
+export ANDROID_SDK="$HOME/Documents/android-sdk-macosx"
 export ANDROID_TOOLS="$ANDROID_HOME/tools"
 export ANDROID_PLATFORM_TOOLS="$ANDROID_HOME/platform-tools"
 
 # Typesafe
-export ACTIVATOR="/Users/augustomna2010/.activator"
-export AKKA_HOME="/Users/augustomna2010/LIBRARIES/akka-2.4.1"
+export ACTIVATOR="$HOME/.activator"
+export AKKA_HOME="$HOME/LIBRARIES/akka-2.4.1"
 
 # Scala
-export SCALA_HOME="/Users/augustomna2010/LIBRARIES/scala-2.11.7"
+export SCALA_HOME="$HOME/LIBRARIES/scala-2.11.7"
 
 # My
 export BIN_HOME=$HOME/bin
