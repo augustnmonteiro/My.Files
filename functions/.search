@@ -6,6 +6,6 @@ function searchAllDirectory(){
 }
 
 # /2 Ext, Term
-function searchAllDirectory(){
+function searchByFileTypeInDirectory(){
     find . -name "*.$1" -exec grep -H "$2" {} \;
 }
