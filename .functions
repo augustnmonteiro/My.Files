@@ -8,6 +8,7 @@
 . $FUNCTIONS/.gitio
 . $FUNCTIONS/.update_dot_files
 . $FUNCTIONS/.change_ext
+. $FUNCTIONS/.search
 
 #Function to resource
 function resource(){

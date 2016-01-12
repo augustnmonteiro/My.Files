@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# /1 Term
+function searchAllDirectory(){
+    find . -name "*" -exec grep -H "$1" {} \;
+}
+
+# /2 Ext, Term
+function searchAllDirectory(){
+    find . -name "*.$1" -exec grep -H "$2" {} \;
+}
