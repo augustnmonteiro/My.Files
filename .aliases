@@ -3,7 +3,10 @@
 #Includes
 . $ALIASES/.chrome
 
-#vim
+# Shortcut
+alias c='clear'
+
+# VIM
 alias vim='$VIM_BINARY -u $DOTFILES/.vimrc'
 alias vi='$VIM_BINARY -u $DOTFILES/.vimrc'
 
