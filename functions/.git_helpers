@@ -19,11 +19,21 @@ function gitPushCurrent () {
 
 #Function to commmit with task id
 function gitCommit(){
-  fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
-  name=$(sed "s/feature\///g" <<< "$fb")
-  name=$(sed "s/hotfix\///g" <<< "$name")
 
-  printf "${BOLD}Feature: $name ${NC} | Message?\n";
+  if [ "$1" != "" ]; then
+    fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
+    name=$(sed "s/feature\///g" <<< "$fb")
+    name=$(sed "s/hotfix\///g" <<< "$name")
 
-  git commit -m "$name: $1"
+    printf "${BOLD}Feature: $name ${NC}\n\n";
+
+    printf "================ Git Commit ================\n";
+    git commit -m "$name: $1"
+
+  else
+
+    printf "Write a message"
+
+  fi
+
 }
