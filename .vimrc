@@ -6,10 +6,10 @@
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
+    Plugin 'typescript-vim'
     Plugin 'tpope/vim-fugitive'
     Plugin 'git://git.wincent.com/command-t.git'
     Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-    Plugin 'user/L9', {'name': 'newL9'}
     call vundle#end()            " required
     filetype plugin indent on    " required
 

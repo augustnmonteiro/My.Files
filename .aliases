@@ -2,6 +2,7 @@
 
 #Includes
 . $ALIASES/.chrome
+. $ALIASES/.docker
 
 # Shortcut
 alias c='clear'
