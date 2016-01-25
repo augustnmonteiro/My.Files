@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias chromePerf='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --enable-memory-info --js-flags="--trace-deopt --trace-opt-verbose --prof --noprof-lazy --log-timer-events" --no-sandbox'
+alias chromePerf='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-memory-info --js-flags="--trace-deopt --trace-opt-verbose --prof --noprof-lazy --log-timer-events" --no-sandbox'
 
 alias chromeUnsecurity='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome_dev_sesion1 --disable-web-security'
 
