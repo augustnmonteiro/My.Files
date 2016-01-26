@@ -8,8 +8,8 @@
 alias c='clear'
 
 # VIM
-alias vim='$VIM_BINARY -u $DOTFILES/.vimrc'
-alias vi='$VIM_BINARY -u $DOTFILES/.vimrc'
+alias vim='nvim -u $DOTFILES/.nvimrc'
+alias vi='nvim -u $DOTFILES/.nvimrc'
 
 alias my_sql='/usr/local/Cellar/mysql/5.6.26/support-files/mysql.server'
 
