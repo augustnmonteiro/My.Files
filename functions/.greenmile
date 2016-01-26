@@ -5,7 +5,7 @@
 #startLiveAPI/1
 function startLiveAPI(){
   server=$1
-  if [ $server == "" ]; then
+  if [ "$server" = "" ]; then
     information "How you not defined server we are use 'beta'"
     server="beta"
   fi
