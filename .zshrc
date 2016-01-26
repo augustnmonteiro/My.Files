@@ -5,7 +5,7 @@
 
 #Exporting Zsh path and config theme
 export ZSH=/Users/augustomna2010/.oh-my-zsh
-ZSH_THEME="bureau"
+ZSH_THEME="agnoster"
 plugins=(git)
 
 #Compiling OnMyZsh

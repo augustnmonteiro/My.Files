@@ -17,3 +17,8 @@ function startLiveAPI(){
   nohup node server.js $server &
   cd $currentPWD
 }
+
+#startLiveAPIDev/1
+function startLiveAPIDev(){
+  startLiveAPI dev$1
+}
