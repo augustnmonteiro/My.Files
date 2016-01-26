@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Some function to boost productivity
+
+#startLiveAPI/1
+function startLiveAPI(){
+  server=$1
+  if [ $server == "" ]; then
+    information "How you not defined server we are use 'beta'"
+    server="beta"
+  fi
+  currentPWD=`pwd`
+  goliveAlone
+  information "Stop all node process"
+  killall node
+  information "Starting API"
+  nohup node server.js $server &
+  cd $currentPWD
+}
