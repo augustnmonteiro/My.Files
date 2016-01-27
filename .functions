@@ -11,6 +11,7 @@
 . $FUNCTIONS/.search
 . $FUNCTIONS/.javascript
 . $FUNCTIONS/.chrome
+. $FUNCTIONS/.notes
 . $FUNCTIONS/.greenmile
 
 #Function to resource
