@@ -16,6 +16,7 @@ function startLiveAPI(){
   information "Starting API"
   nohup node server.js $server &
   cd $currentPWD
+  openInChrome "http://localhost:3000/index"
 }
 
 #startLiveAPIDev/1

@@ -10,6 +10,7 @@
 . $FUNCTIONS/.change_ext
 . $FUNCTIONS/.search
 . $FUNCTIONS/.javascript
+. $FUNCTIONS/.chrome
 . $FUNCTIONS/.greenmile
 
 #Function to resource
