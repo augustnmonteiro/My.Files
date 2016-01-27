@@ -1,0 +1,7 @@
+#!bin/bash
+
+# openInChrome/1
+function openInChrome(){
+    url=$1
+    /usr/bin/open -a "/Applications/Google Chrome.app" '$url'
+}

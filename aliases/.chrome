@@ -4,4 +4,4 @@ alias chromePerf='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
 alias chromeUnsecurity='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome_dev_sesion1 --disable-web-security'
 
-alias chrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --user-data-dir=/tmp/chrome_dev_sesion1'
+#alias chrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --user-data-dir=/tmp/chrome_dev_sesion1'

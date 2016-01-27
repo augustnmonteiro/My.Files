@@ -9,6 +9,7 @@
 . $FUNCTIONS/.update_dot_files
 . $FUNCTIONS/.change_ext
 . $FUNCTIONS/.search
+. $FUNCTIONS/.javascript
 . $FUNCTIONS/.greenmile
 
 #Function to resource

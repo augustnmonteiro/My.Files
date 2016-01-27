@@ -162,6 +162,7 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <leader>jt :! jsctags -o tags server test admin<CR>
 
 " Bind leader-leader to tcomment
 map <Leader><Leader> gc
