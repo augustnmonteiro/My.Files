@@ -7,6 +7,9 @@
 # Shortcut
 alias c='clear'
 
+# Ctags
+alias ctags="`brew --prefix`/bin/ctags"
+
 # VIM
 alias vim='nvim -u $DOTFILES/.nvimrc'
 alias vi='nvim -u $DOTFILES/.nvimrc'
