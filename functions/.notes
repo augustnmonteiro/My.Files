@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#noteCreateNow/0
+function noteCreateNow(){
+  vi "`date`.md"
+}

@@ -49,8 +49,15 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'ervandew/supertab'
 Plug 'honza/vim-snippets'
 
+Plug 'google/vim-maktaba'
+Plug 'google/vim-coverage'
+Plug 'google/vim-glaive'
 
 call plug#end()
+
+" Adding Coverage Plug
+call glaive#Install()
+Glaive coverage plugin[mappings]
 
 " ================ General Config ====================
 
