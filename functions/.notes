@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#noteCreateNow/0
-function noteCreateNow(){
-  vi "`date`.md"
+#noteCreateToday/0
+function noteCreateToday(){
+  currentPWD=`pwd`
+  cd $HOME/notes
+  vi "`date +%m-%d-%Y`.md"
+  cd $currentPWD
 }
