@@ -24,9 +24,9 @@ CONSTANTS=$DOTFILES/constants
 . $DOTFILES/.tools
 . $DOTFILES/.constants
 . $DOTFILES/.goaliases
+. $DOTFILES/.aliases
 . $DOTFILES/.functions
 . $DOTFILES/.path
-. $DOTFILES/.aliases
 . $DOTFILES/.keyboard
 
 #Include fuck

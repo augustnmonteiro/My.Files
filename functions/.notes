@@ -4,6 +4,6 @@
 function noteCreateToday(){
   currentPWD=`pwd`
   cd $HOME/notes
-  vi "`date +%m-%d-%Y`.md"
+  vim "`date +%m-%d-%Y`.md"
   cd $currentPWD
 }
