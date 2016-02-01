@@ -107,6 +107,7 @@ let loaded_matchparen = 1 " Disable Highlighting of matching parens
 set noswapfile
 set nobackup
 set nowb
+set guifont=Meslo\ LG\ S\ for\ Powerline
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.

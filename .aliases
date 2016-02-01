@@ -25,3 +25,6 @@ alias gpbeta="g pull origin beta"
 
 # RLWrap
 alias telnet="rlwrap telnet"
+
+# Names -> ()
+alias maven="mvn"
