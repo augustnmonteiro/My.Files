@@ -37,3 +37,10 @@ function gitCommit(){
   fi
 
 }
+
+# Git Current Branch
+function gitCurrentBranch () {
+    branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+    echo $branch | pbcopy
+    information "Current Branch: '$branch' | Already on Clipboard"
+}
