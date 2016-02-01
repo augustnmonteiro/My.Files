@@ -24,3 +24,16 @@ function startLiveAPI(){
 function startLiveAPIDev(){
   startLiveAPI dev$1
 }
+
+# jiraOpen/0
+function jiraOpen(){
+    task=$1
+
+    if [ "$task" = "" ]; then
+        fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
+        name=$(sed "s/feature\///g" <<< "$fb")
+        task=$(sed "s/hotfix\///g" <<< "$name")
+    fi
+
+    openInChrome "https://jira.greenmile.com/browse/$task"
+}
