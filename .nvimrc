@@ -356,3 +356,13 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 set autochdir 
 set tags+=./tags;
+
+function Hjs()
+    let s:line=line(".")
+    call setline(s:line, "/*")
+    call append(s:line, " * @author : Augusto Monteiro")
+    call append(s:line+1, " * @email  : augustomna2010@gmail.com")
+    call append(s:line+2, " * @augustomna2010 ")
+    call append(s:line+3, "*/")
+    unlet s:line
+endfunction
