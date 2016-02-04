@@ -82,7 +82,6 @@ set hidden
 
 " Gruvbox Theme Configuration
 " colorscheme gruvbox
-" set background=dark
 " syntax on
 "
 " if !has("gui_running")
@@ -366,3 +365,8 @@ function Hjs()
     call append(s:line+3, "*/")
     unlet s:line
 endfunction
+
+
+
+
+set background=dark
