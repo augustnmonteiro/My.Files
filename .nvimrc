@@ -90,8 +90,8 @@ set hidden
 
 " colorscheme gruvbox
 " colorscheme xterm16
-" colorscheme inkpot
-colorscheme up
+colorscheme inkpot
+" colorscheme up
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
