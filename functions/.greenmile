@@ -3,7 +3,7 @@
 # Some function to boost productivity
 
 #startLiveAPI/1
-function startLiveAPI(){
+function liveStartAPI(){
   server=$1
   if [ "$server" = "" ]; then
     information "How you not defined server we are use 'beta'"
@@ -13,15 +13,25 @@ function startLiveAPI(){
   goliveAlone
   information "Stop all node process"
   killall node
-  information "Starting API"
+  information "Starting API In ($server)"
+  export LIVE_API_RUNNING=$server
   nohup node server.js $server &
   cd $currentPWD
   sleep 2
   openInChrome "http://localhost:3000/index"
 }
 
+function liveWhichApi(){
+  information "API Running In ($LIVE_API_RUNNING)"
+}
+
+function liveRestartApi(){
+  information "API Running In ($LIVE_API_RUNNING)"
+  liveStartAPI $LIVE_API_RUNNING
+}
+
 #startLiveAPIDev/1
-function startLiveAPIDev(){
+function liveStartAPIDev(){
   startLiveAPI dev$1
 }
 
