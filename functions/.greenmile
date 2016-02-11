@@ -16,13 +16,18 @@ function liveStartAPI(){
   information "Starting API In ($server)"
   export LIVE_API_RUNNING=$server
   nohup node server.js $server &
+  export LIVE_API_RUNNING_PID=$!
   cd $currentPWD
   sleep 2
   openInChrome "http://localhost:3000/index"
 }
 
 function liveWhichApi(){
-  information "API Running In ($LIVE_API_RUNNING)"
+  if kill -0 $LIVE_API_RUNNING_PID ; then
+    information "API Running In ($LIVE_API_RUNNING) Which ($LIVE_API_RUNNING_PID) PID"
+  else
+    error "API is down ($LIVE_API_RUNNING)"
+  fi
 }
 
 function liveRestartApi(){
