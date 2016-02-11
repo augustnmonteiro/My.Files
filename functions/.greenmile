@@ -32,7 +32,7 @@ function liveRestartApi(){
 
 #startLiveAPIDev/1
 function liveStartAPIDev(){
-  startLiveAPI dev$1
+  liveStartAPI dev$1
 }
 
 # jiraOpen/0
