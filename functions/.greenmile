@@ -52,3 +52,35 @@ function jiraOpen(){
 
     openInChrome "https://jira.greenmile.com/browse/$task"
 }
+
+function liveRunLocalSonar(){
+  gogmlive
+  host='http://192.168.99.100:9000'
+  if [ "$1" != "" ]; then
+    host=$1
+  fi
+
+  sonar-runner -Dsonar.host.url="$host" \
+    -Dsonar.jdbc.url=jdbc:postgresql://192.168.99.100/sonar \
+    -Dsonar.jdbc.password=xaexohquaetiesoo \
+    -Dsonar.javascript.coveragePlugin=lcov \
+    -Dsonar.javascript.lcov.reportPath=/Users/augustomna2010/Sagarana/gm-live/sonar/report-lcov/lcov.info \
+    -Dsonar.projectName='Greenmile Live' \
+    -Dsonar.login=admin \
+    -Dsonar.password=admin
+}
+
+function liveStartSonarContainer(){
+  currentFolder=`pwd`
+  cd /Users/augustomna2010/Workspace/sonar
+  docker-machine start sonar
+  eval $(docker-machine env sonar)
+  docker-compose up -d
+  cd $currentFolder
+}
+
+function liveSonarLogs(){
+  cd /Users/augustomna2010/Workspace/sonar
+  docker-compose logs 
+  cd $currentFolder
+}

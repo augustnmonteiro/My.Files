@@ -34,10 +34,6 @@ success() {
   printf "\n${GREEN}%s${NC}\n" "$*"
 }
 
-success() {
-  printf "\n${GREEN}%s${NC}\n" "$*"
-}
-
 bold() {
   printf "\n${BOLD}%s${NC}\n" "$*"
 }

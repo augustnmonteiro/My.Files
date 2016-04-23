@@ -1,7 +1,11 @@
 #!/bin/bash
 
-alias chromePerf='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-memory-info --js-flags="--trace-deopt --trace-opt-verbose --prof --noprof-lazy --log-timer-events" --no-sandbox'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
-alias chromeUnsecurity='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome_dev_sesion1 --disable-web-security'
+alias chromePerf='chrome --enable-memory-info --js-flags="--trace-deopt --trace-opt-verbose --prof --noprof-lazy --log-timer-events" --no-sandbox'
+
+alias chromeUnsecurity='chrome --user-data-dir=/tmp/chrome_dev_sesion1 --disable-web-security'
+
+alias chromeRemote='chrome --remote-debugging-port=9222 --no-first-run --user-data-dir="$TMPDIR/chrome-profile" http://localhost:9222#http://localhost:9999/front_end/inspector.html?experiments=true'
 
 #alias chrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --user-data-dir=/tmp/chrome_dev_sesion1'
