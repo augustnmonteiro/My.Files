@@ -27,6 +27,8 @@ export BIN_HOME=$HOME/bin
 
 export DOT_BIN_HOME=$HOME/.bin
 
+export MACOSX_DEPLOYMENT_TARGET=10.8
+
 #PHP
 export PHP="/usr/local/php5-7.0.4-20160310-143636/bin"
 
