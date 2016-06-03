@@ -1,4 +1,3 @@
 #!/bin/bash
 
 # Machines
-alias dockerMachinePingnik="eval $(docker-machine env pingnik)"

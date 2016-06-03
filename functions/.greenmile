@@ -84,3 +84,11 @@ function liveSonarLogs(){
   docker-compose logs 
   cd $currentFolder
 }
+
+function start_server(){
+  folder='/Users/augustomna2010/Sagarana/gm-dev-env'
+  current=`pwd`
+  cd $folder
+  start-server.sh
+  cd $current
+}

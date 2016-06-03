@@ -3,6 +3,7 @@
 #Includes
 . $ALIASES/.chrome
 . $ALIASES/.docker
+. $ALIASES/.git
 
 # Shortcut
 alias c='clear'
@@ -16,12 +17,7 @@ alias vim='nvim'
 alias vi='vim'
 alias v='vi'
 
-alias my_sql='/usr/local/Cellar/mysql/5.6.26/support-files/mysql.server'
-
-# Git handlers
-alias gpushhead="git push origin HEAD"
-alias gpullhead="git pull --rebase origin HEAD"
-alias gpbeta="g pull origin beta"
+alias mysql='/usr/local/Cellar/mysql/5.6.26/support-files/mysql.server'
 
 # RLWrap
 alias telnet="rlwrap telnet"

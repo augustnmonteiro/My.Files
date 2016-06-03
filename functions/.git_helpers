@@ -1,24 +1,24 @@
 #!bin/bash
 
 #Function to checkout for a feature branch
-function gitcfb(){
+function gcheckoutfb(){
   g checkout feature/$1
 }
 
 #Function to checkout for a hotfix 
-function gitchf(){
+function gcheckouthf(){
   g checkout hotfix/$1
 }
 
 #Function to push for current branch
-function gitPushCurrent () {
+function gitpushcurrent () {
     branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
     git push origin $branch
     information "Pushed to branch '$branch'"
 }
 
 #Function to commmit with task id
-function gitCommit(){
+function gitcommittaskname(){
 
   if [ "$1" != "" ]; then
     fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
@@ -39,7 +39,7 @@ function gitCommit(){
 }
 
 # Git Current Branch
-function gitCurrentBranch () {
+function gitcurrentbranch () {
     branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
     echo $branch | pbcopy
     information "Current Branch: '$branch' | Already on Clipboard"
