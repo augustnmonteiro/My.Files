@@ -10,15 +10,27 @@ function gcheckouthf(){
   g checkout hotfix/$1
 }
 
+#Function pull fb
+function gpullfb(){
+  g pull origin beta
+  g checkout feature/$1
+}
+
+#Function pull hf
+function gpullhf(){
+  g pull origin master
+  g checkout hotfix/$1
+}
+
 #Function to push for current branch
-function gitpushcurrent () {
+function gpushcurrent () {
     branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
     git push origin $branch
     information "Pushed to branch '$branch'"
 }
 
 #Function to commmit with task id
-function gitcommittaskname(){
+function gcommittaskname(){
 
   if [ "$1" != "" ]; then
     fb=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p') 
@@ -39,7 +51,7 @@ function gitcommittaskname(){
 }
 
 # Git Current Branch
-function gitcurrentbranch () {
+function gcurrentbranch () {
     branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
     echo $branch | pbcopy
     information "Current Branch: '$branch' | Already on Clipboard"
